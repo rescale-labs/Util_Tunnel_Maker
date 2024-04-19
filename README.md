@@ -11,11 +11,6 @@ on job 2 (defined using `--job2`).
 It then creates the shell script `~/create_ssh_tunnel.sh` on job 1, that can be used to 
 create an SSH tunnel from job 1 to job 2.
 
-***
-**Please note the API endpoint this script uses to identify host, user and SSH port of a job 
-is not officially supported by Rescale.**
-***
-
 ## A Note on Security
 
 Please note that the private temporary SSH key created by the `tunnel_maker.py` script is uploaded to job 1. 

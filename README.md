@@ -22,7 +22,10 @@ The `tunnel_maker.py` script does not reuse SSH keys, but creates a new temporar
 
 ## Set up the Environment
 
-To run `tunnel_maker.py` from the command line, create a virtual environment, 
+Before you get started it is important that an SSH key is configured for your user account.
+Go to "Profile" > "User Profile Settings" → "Job Settings" and confirm that an "SSH Public Key" is available.
+
+To run `tunnel_maker.py` from the command line on your local computer, create a virtual environment, 
 install the requirements and start the script with suitable command line options:
 
 ```
@@ -74,7 +77,7 @@ the STAR-CCM+ client and an SSH tunnel.
 
 ![](README.images/find_job_id.png)
 
-2. Call the `tunnel_maker.py`script and provide the ID of the Workstation (`--job1`) and the ID of the batch job (`--job2`) as command line arguments.
+2. Call the `tunnel_maker.py`script on your local computer and provide the ID of the Workstation (`--job1`) and the ID of the batch job (`--job2`) as command line arguments.
 
 ```
 python tunnel_maker.py --job1 NYGYHc --job2 oQqGTc --local_port_forwarding 47827:localhost:47827 --api_profile prod

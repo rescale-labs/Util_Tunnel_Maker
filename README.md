@@ -23,7 +23,7 @@ The `tunnel_maker.py` script does not reuse SSH keys, but creates a new temporar
 ## Set up the Environment
 
 Before you get started it is important that an SSH key is configured for your user account.
-Go to "Profile" > "User Profile Settings" → "Job Settings" and confirm that an "SSH Public Key" is available.
+Go to "Profile" > "User Profile Settings" > "Job Settings" and confirm that an "SSH Public Key" is available.
 
 To run `tunnel_maker.py` from the command line on your local computer, create a virtual environment, 
 install the requirements and start the script with suitable command line options:
